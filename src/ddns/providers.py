@@ -438,7 +438,7 @@ class DDNSProviderAllInkl(DDNSProvider):
 	# from the net.
 	# http://all-inkl.goetze.it/v01/ddns-mit-einfachen-mitteln/
 
-	url = "http://dyndns.kasserver.com"
+	url = "https://dyndns.kasserver.com"
 	can_remove_records = False
 
 	def update(self):
@@ -614,7 +614,7 @@ class DDNSProviderDDNSS(DDNSProvider):
 	# http://www.ddnss.de/info.php
 	# http://www.megacomputing.de/2014/08/dyndns-service-response-time/#more-919
 
-	url = "http://www.ddnss.de/upd.php"
+	url = "https://www.ddnss.de/upd.php"
 	can_remove_records = False
 
 	def update_protocol(self, proto):
@@ -678,7 +678,7 @@ class DDNSProviderDHS(DDNSProvider):
 	# No information about the used update api provided on webpage,
 	# grabed from source code of ez-ipudate.
 
-	url = "http://members.dhs.org/nic/hosts"
+	url = "https://members.dhs.org/nic/hosts"
 	can_remove_records = False
 
 	def update_protocol(self, proto):
@@ -933,7 +933,7 @@ class DDNSProviderEasyDNS(DDNSProvider):
 	# (API 1.3) are available on the providers webpage.
 	# https://fusion.easydns.com/index.php?/Knowledgebase/Article/View/102/7/dynamic-dns
 
-	url = "http://api.cp.easydns.com/dyn/tomato.php"
+	url = "https://api.cp.easydns.com/dyn/tomato.php"
 
 	def update_protocol(self, proto):
 		data = {
@@ -979,7 +979,7 @@ class DDNSProviderDomopoli(DDNSProtocolDynDNS2, DDNSProvider):
 
 	# https://www.domopoli.de/?page=howto#DynDns_start
 
-	url = "http://dyndns.domopoli.de/nic/update"
+	url = "https://dyndns.domopoli.de/nic/update"
 
 
 class DDNSProviderDynsNet(DDNSProvider):
@@ -993,7 +993,7 @@ class DDNSProviderDynsNet(DDNSProvider):
 	# the possible response codes. (Currently we are using the v1.1 proto)
 	# http://www.dyns.net/documentation/technical/protocol/
 
-	url = "http://www.dyns.net/postscript011.php"
+	url = "https://www.dyns.net/postscript011.php"
 
 	def update_protocol(self, proto):
 		data = {
@@ -1372,7 +1372,7 @@ class DDNSProviderNOIP(DDNSProtocolDynDNS2, DDNSProvider):
 	# here: http://www.noip.com/integrate/request and
 	# here: http://www.noip.com/integrate/response
 
-	url = "http://dynupdate.noip.com/nic/update"
+	url = "https://dynupdate.noip.com/nic/update"
 
 	def prepare_request_data(self, proto):
 		assert proto == "ipv4"
